@@ -16,7 +16,7 @@ Also note that `node_modules/@deck.gl` [exists in the npm job][npm ls] but [not 
 ## Docker repro
 ```bash
 build() {
-    docker build --build-arg npm=$1 --build-arg "cache_nonce=`date`" -t pnpm-transdep-issue --progress=plain .
+    docker build --build-arg npm=$1 -t pnpm-transdep-issue --progress=plain .
 }
 build npm   # ✅ works
 build pnpm  # ❌ fails
