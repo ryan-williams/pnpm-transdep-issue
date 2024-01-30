@@ -14,5 +14,6 @@ jobs:
       - run: ${{ matrix.npm }} install
       # `npm` shows a @deck.gl subdir here, `pnpm` doesn't
       - run: ls -l node_modules
+      - run: ${{ matrix.npm }} ls
       - run: tsc --skipLibCheck deckgl.ts        # ✅ succeeds with npm and pnpm
       - run: tsc --skipLibCheck deckgl-react.ts  # ⚠️  succeeds with npm, fails with pnpm: "Cannot find module '@deck.gl/>
