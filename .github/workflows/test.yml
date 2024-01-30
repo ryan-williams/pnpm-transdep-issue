@@ -1,0 +1,19 @@
+name: Repro
+on:
+  push:
+    branches: [main]
+jobs:
+  repro:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        npm: [ npm, pnpm ]
+      fail-fast: false
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm install -g pnpm typescript
+      - run: ${{ matrix.npm }} install
+      # `npm` shows a @deck.gl subdir here, `pnpm` doesn't
+      - run: ls -l node_modules
+      - run: tsc --skipLibCheck deckgl.ts        # ✅ succeeds with npm and pnpm
+      - run: tsc --skipLibCheck deckgl-react.ts  # ⚠️  succeeds with npm, fails with pnpm: "Cannot find module '@deck.gl/>
