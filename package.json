@@ -1,0 +1,10 @@
+{
+    "name": "pnpm-deck.gl-issue",
+    "dependencies": {
+        "deck.gl": "8.9.34"
+    },
+    "devDependencies": {
+        "@types/node": "^20",
+        "typescript": "^5"
+    }
+}
