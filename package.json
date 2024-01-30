@@ -1,5 +1,5 @@
 {
-    "name": "pnpm-deck.gl-issue",
+    "name": "pnpm-transdep-issue",
     "dependencies": {
         "deck.gl": "8.9.34"
     },
