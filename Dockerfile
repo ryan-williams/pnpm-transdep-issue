@@ -9,4 +9,4 @@ RUN $npm install
 RUN ls -l node_modules
 COPY . .
 RUN tsc --skipLibCheck deckgl.ts        # ✅ succeeds with npm and pnpm
-RUN tsc --skipLibCheck deckgl-react.ts  # ⚠️  succeeds with npm, fails with pnpm: "Cannot find module '@deck.gl/>
+RUN tsc --skipLibCheck deckgl-react.ts  # ❌ succeeds with npm, fails with pnpm: "Cannot find module '@deck.gl/react/typed' or its corresponding type declarations."
