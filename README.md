@@ -1,5 +1,9 @@
 # pnpm-transdep-issue
-Repro: [pnpm] doesn't correctly install transitive dependencies:
+[pnpm] doesn't install transitive dependencies ([pnpm#7594])
+
+**Note:** this is working as intended; see [this comment on pnpm#7594][pnpm#7594 comment], [this explanation][pnpm flat node_modules] of pnpm's flat node_modules structure, and [this explanation][pnpm strict] of pnpm's "strict" enforcement that packages references directly must be listed explicitly as package.json "dependencies."
+
+---
 
 ## Github Actions repro
 See [this example run][GHA]:
@@ -41,3 +45,7 @@ The `build` command also runs `ls -l node_modules`, and we see that the `npm` ve
 [deck.gl#8456]: https://github.com/visgl/deck.gl/issues/8456
 [npm ls]: https://github.com/ryan-williams/pnpm-transdep-issue/actions/runs/7706228027/job/21001441987#step:6:7
 [pnpm ls]: https://github.com/ryan-williams/pnpm-transdep-issue/actions/runs/7706228027/job/21001442089#step:6:6
+[pnpm#7594]: https://github.com/pnpm/pnpm/issues/7594
+[pnpm#7594 comment]: https://github.com/pnpm/pnpm/issues/7594#issuecomment-1916495762
+[pnpm flat node_modules]: https://pnpm.io/blog/2020/05/27/flat-node-modules-is-not-the-only-way
+[pnpm strict]: https://medium.com/pnpm/pnpms-strictness-helps-to-avoid-silly-bugs-9a15fb306308
