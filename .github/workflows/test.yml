@@ -1,7 +1,6 @@
 name: Repro
 on:
-  push:
-    branches: [main]
+  workflow_dispatch:
 jobs:
   repro:
     runs-on: ubuntu-latest
