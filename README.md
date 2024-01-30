@@ -35,9 +35,9 @@ The `build` command also runs `ls -l node_modules`, and we see that the `npm` ve
 
 [pnpm]: https://pnpm.js.org/
 [deck.gl dep]: https://unpkg.com/browse/deck.gl@8.9.34/package.json
-[GHA]: https://github.com/ryan-williams/pnpm-transdep-issue/actions/runs/7706107756
-[GHA npm]: https://github.com/ryan-williams/pnpm-transdep-issue/actions/runs/7706107756/job/21001128615
-[GHA pnpm]: https://github.com/ryan-williams/pnpm-transdep-issue/actions/runs/7706107756/job/21001128781#step:9:5
+[GHA]: https://github.com/ryan-williams/pnpm-transdep-issue/actions/runs/7706228027
+[GHA npm]: https://github.com/ryan-williams/pnpm-transdep-issue/actions/runs/7706228027/job/21001441987
+[GHA pnpm]: https://github.com/ryan-williams/pnpm-transdep-issue/actions/runs/7706228027/job/21001442089#step:9:5
 [deck.gl#8456]: https://github.com/visgl/deck.gl/issues/8456
-[npm ls]: https://github.com/ryan-williams/pnpm-transdep-issue/actions/runs/7706107756/job/21001128615#step:6:7
-[pnpm ls]: https://github.com/ryan-williams/pnpm-transdep-issue/actions/runs/7706107756/job/21001128781#step:6:6
+[npm ls]: https://github.com/ryan-williams/pnpm-transdep-issue/actions/runs/7706228027/job/21001441987#step:6:7
+[pnpm ls]: https://github.com/ryan-williams/pnpm-transdep-issue/actions/runs/7706228027/job/21001442089#step:6:6
