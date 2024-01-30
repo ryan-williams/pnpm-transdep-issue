@@ -9,7 +9,7 @@ See [this example run][GHA]:
   deckgl-react.ts(1,20): error TS2307: Cannot find module '@deck.gl/react/typed' or its corresponding type declarations.
   ```
 
-For some reason, `pnpm install deck.gl` fails to install deck.gl's dependencies (original discussion: [deck.gl#8456])
+For some reason, `pnpm install deck.gl` fails to install [deck.gl's dependencies][deck.gl dep] (original discussion: [deck.gl#8456])
 
 Also note that `node_modules/@deck.gl` [exists in the npm job][npm ls] but [not in the pnpm job][pnpm ls].
 
