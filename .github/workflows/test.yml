@@ -11,6 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: npm install -g pnpm typescript
+      - run: ${{ matrix.npm }} --version
       - run: ${{ matrix.npm }} install
       # `npm` shows a @deck.gl subdir here, `pnpm` doesn't
       - run: ls -l node_modules
